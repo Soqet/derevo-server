@@ -1,0 +1,27 @@
+{
+  "name": "derevo-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "todo",
+    "list",
+    "express",
+    "server"
+  ],
+  "author": "Soqet",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "@types/mongoose": "^5.10.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.11"
+  }
+}
