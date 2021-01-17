@@ -1,5 +1,5 @@
 
 
-class TaskManager {
+export default class TaskManager {
   
 }

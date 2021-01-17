@@ -1,5 +1,5 @@
 
 
-class CategoryManager {
+export default class CategoryManager {
   
 }

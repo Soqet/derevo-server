@@ -1,3 +1,5 @@
 
 
-class FolderManager {}
+export default class FolderManager {
+  
+}

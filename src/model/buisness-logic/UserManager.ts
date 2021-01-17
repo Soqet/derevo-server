@@ -1,5 +1,5 @@
 
 
-class UserManager {
+export default class UserManager {
 
 }

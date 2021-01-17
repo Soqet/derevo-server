@@ -8,9 +8,10 @@ let userSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
-  passwordHash: {
+  googleId: {
     type: String, 
-    required: true
+    required: true,
+    unique: true
   },
   name: {
     type: String, 
