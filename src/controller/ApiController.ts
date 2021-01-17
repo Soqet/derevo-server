@@ -1,14 +1,19 @@
-import Controller from './Controller';
+import IExpressController from './IExpressController';
 import express, { response } from 'express';
 
-export default class ApiController extends Controller {
+export default class ApiController implements IExpressController {
+
+  private path: string;
+  public readonly router: express.Router;
+
   constructor() {
-    super('/api');
+    this.path = '/api';
+    this.router = express.Router();
     this.initRoutes();
   }
 
-  protected initRoutes() {
-    this.router.post(`${this.path}/helloworld`, this.getUserData);
+  public initRoutes() {
+    this.router.post(`${this.path}/`, this.getUserData);
   }
 
   private getUserData(request: express.Request, response: express.Response) {

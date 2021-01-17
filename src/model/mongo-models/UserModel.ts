@@ -23,5 +23,5 @@ let userSchema = new mongoose.Schema({
 });
 
 
-let userModel = mongoose.model('user', userSchema);
-export default userModel;
+let UserModel = mongoose.model('user', userSchema);
+export default UserModel;

@@ -1,12 +1,13 @@
 import bodyParser from 'body-parser';
 import express from 'express';
-import Controller from './controller/Controller';
+import IExpressController from './controller/IExpressController';
+//import Controller from './controller/Controller';
 
 export default class App {
   public app: express.Application;
   public port: number;
 
-  constructor(controllers: Controller[], port: number) {
+  constructor(controllers: IExpressController[], port: number) {
     this.port = port;
     this.app = express();
     this.initControllers(controllers);
@@ -22,7 +23,7 @@ export default class App {
     });
   }
 
-  private initControllers(controllers: Controller[]) {
+  private initControllers(controllers: IExpressController[]) {
     controllers.forEach((controller) => {
       this.app.use('/', controller.router);
     });
